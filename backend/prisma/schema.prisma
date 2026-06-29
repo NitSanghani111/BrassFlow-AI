@@ -1,0 +1,471 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum UserRole {
+  ADMINISTRATOR
+  OWNER
+  ACCOUNTANT
+  SALES
+  PURCHASE
+  WAREHOUSE
+  PRODUCTION
+  OPERATOR
+  VIEWER
+}
+
+enum CustomerStatus {
+  ACTIVE
+  INACTIVE
+  BLOCKED
+}
+
+enum SupplierStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum UnitType {
+  KG
+  PCS
+  METERS
+  TONS
+}
+
+enum InvoiceStatus {
+  PENDING
+  PARTIAL
+  PAID
+  CANCELLED
+}
+
+enum StockTransactionType {
+  IN
+  OUT
+}
+
+enum StockReason {
+  INVOICE_BILLING
+  PURCHASE_RECEIPT
+  STOCK_ADJUSTMENT
+  PRODUCTION_INPUT
+  PRODUCTION_OUTPUT
+  RETURN
+  OPENING_STOCK
+}
+
+enum OCRDocumentType {
+  INVOICE
+  PURCHASE_BILL
+  DELIVERY_CHALLAN
+  QUOTATION
+  RECEIPT
+  GST_BILL
+}
+
+enum OCRStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum ReminderFrequency {
+  DAILY
+  WEEKLY
+  BI_WEEKLY
+  MONTHLY
+}
+
+enum CommunicationChannel {
+  EMAIL
+  WHATSAPP
+  SMS
+  DASHBOARD
+}
+
+enum ReminderStatus {
+  SENT
+  DELIVERED
+  FAILED
+}
+
+model User {
+  id           String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email        String    @unique
+  passwordHash String
+  firstName    String
+  lastName     String
+  role         UserRole
+  isActive     Boolean   @default(true)
+  createdAt    DateTime  @default(now()) @db.Timestamptz
+  updatedAt    DateTime  @updatedAt @db.Timestamptz
+  isDeleted    Boolean   @default(false)
+  deletedAt    DateTime? @db.Timestamptz
+
+  sessions          Session[]
+  createdCustomers  Customer[]         @relation("CustomerCreatedBy")
+  updatedCustomers  Customer[]         @relation("CustomerUpdatedBy")
+  createdSuppliers  Supplier[]         @relation("SupplierCreatedBy")
+  updatedSuppliers  Supplier[]         @relation("SupplierUpdatedBy")
+  createdProducts   Product[]          @relation("ProductCreatedBy")
+  updatedProducts   Product[]          @relation("ProductUpdatedBy")
+  createdInvoices   Invoice[]          @relation("InvoiceCreatedBy")
+  updatedInvoices   Invoice[]          @relation("InvoiceUpdatedBy")
+  stockTransactions StockTransaction[] @relation("StockTransactionCreatedBy")
+  ocrReviews        OCRDocument[]      @relation("OCRDocumentReviewedBy")
+  auditLogs         AuditLog[]         @relation("AuditLogUser")
+  createdPurchases  Purchase[]         @relation("PurchaseCreatedBy")
+  updatedPurchases  Purchase[]         @relation("PurchaseUpdatedBy")
+
+  @@index([email])
+  @@index([role])
+}
+
+model Session {
+  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId    String   @db.Uuid
+  token     String   @unique
+  expiresAt DateTime @db.Timestamptz
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime @default(now()) @db.Timestamptz
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([token])
+  @@index([userId])
+}
+
+model Customer {
+  id                 String         @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  companyName        String
+  contactName        String?
+  email              String?
+  phone              String
+  gstin              String?
+  pan                String?
+  billingStreet      String
+  billingCity        String
+  billingState       String
+  billingZip         String
+  billingCountry     String         @default("India")
+  shippingStreet     String
+  shippingCity       String
+  shippingState      String
+  shippingZip        String
+  shippingCountry    String         @default("India")
+  outstandingBalance Decimal        @default(0.00) @db.Decimal(15, 2)
+  paymentTermsDays   Int            @default(30)
+  status             CustomerStatus @default(ACTIVE)
+  aiNotes            String?        @db.Text
+  notes              String?        @db.Text
+  createdAt          DateTime       @default(now()) @db.Timestamptz
+  updatedAt          DateTime       @updatedAt @db.Timestamptz
+  createdById        String?        @db.Uuid
+  updatedById        String?        @db.Uuid
+  isDeleted          Boolean        @default(false)
+  deletedAt          DateTime?      @db.Timestamptz
+
+  createdBy User?     @relation("CustomerCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  updatedBy User?     @relation("CustomerUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+  invoices  Invoice[]
+
+  @@index([companyName])
+  @@index([phone])
+  @@index([gstin])
+}
+
+model Supplier {
+  id               String         @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  companyName      String
+  contactName      String?
+  email            String?
+  phone            String
+  gstin            String?
+  pan              String?
+  billingStreet    String
+  billingCity      String
+  billingState     String
+  billingZip       String
+  billingCountry   String         @default("India")
+  outstandingBalance Decimal      @default(0.00) @db.Decimal(15, 2)
+  paymentTermsDays Int            @default(30)
+  status           SupplierStatus @default(ACTIVE)
+  notes            String?        @db.Text
+  createdAt        DateTime       @default(now()) @db.Timestamptz
+  updatedAt        DateTime       @updatedAt @db.Timestamptz
+  createdById      String?        @db.Uuid
+  updatedById      String?        @db.Uuid
+  isDeleted        Boolean        @default(false)
+  deletedAt        DateTime?      @db.Timestamptz
+
+  createdBy User? @relation("SupplierCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  updatedBy User? @relation("SupplierUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+  purchases Purchase[]
+
+  @@index([companyName])
+  @@index([gstin])
+}
+
+model Product {
+  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  sku           String    @unique
+  name          String
+  category      String
+  hsnCode       String
+  gstRate       Decimal   @default(18.00) @db.Decimal(5, 2)
+  unit          UnitType  @default(KG)
+  purchasePrice Decimal   @db.Decimal(15, 4)
+  sellingPrice  Decimal   @db.Decimal(15, 4)
+  openingStock  Decimal   @default(0.000) @db.Decimal(15, 3)
+  currentStock  Decimal   @default(0.000) @db.Decimal(15, 3)
+  minimumStock  Decimal   @default(0.000) @db.Decimal(15, 3)
+  reservedStock Decimal   @default(0.000) @db.Decimal(15, 3)
+  internalCode  String?
+  customerPartNumber String?
+  material      String?
+  weight        Decimal?  @db.Decimal(10, 3)
+  finish        String?
+  drawingNumber String?
+  revision      String?
+  cadDrawingUrl String?
+  imageUrl      String?
+  createdAt     DateTime  @default(now()) @db.Timestamptz
+  updatedAt     DateTime  @updatedAt @db.Timestamptz
+  createdById   String?   @db.Uuid
+  updatedById   String?   @db.Uuid
+  isDeleted     Boolean   @default(false)
+  deletedAt     DateTime? @db.Timestamptz
+
+  createdBy         User?              @relation("ProductCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  updatedBy         User?              @relation("ProductUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+  invoiceItems      InvoiceItem[]
+  purchaseItems     PurchaseItem[]
+  stockTransactions StockTransaction[]
+
+  @@index([sku])
+  @@index([name])
+  @@index([category])
+}
+
+model Invoice {
+  id                 String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  invoiceNumber      String        @unique
+  invoiceDate        DateTime      @db.Date
+  dueDate            DateTime      @db.Date
+  customerId         String        @db.Uuid
+  status             InvoiceStatus @default(PENDING)
+  subtotal           Decimal       @db.Decimal(15, 2)
+  discountAmount     Decimal       @default(0.00) @db.Decimal(15, 2)
+  cgst               Decimal       @default(0.00) @db.Decimal(15, 2)
+  sgst               Decimal       @default(0.00) @db.Decimal(15, 2)
+  igst               Decimal       @default(0.00) @db.Decimal(15, 2)
+  roundOff           Decimal       @default(0.00) @db.Decimal(5, 2)
+  grandTotal         Decimal       @db.Decimal(15, 2)
+  paymentTerms       String?
+  notes              String?       @db.Text
+  termsAndConditions String?       @db.Text
+  pdfUrl             String?
+  ocrDocumentId      String?       @db.Uuid
+  createdAt          DateTime      @default(now()) @db.Timestamptz
+  updatedAt          DateTime      @updatedAt @db.Timestamptz
+  createdById        String?       @db.Uuid
+  updatedById        String?       @db.Uuid
+
+  customer          Customer           @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  createdBy         User?              @relation("InvoiceCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  updatedBy         User?              @relation("InvoiceUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+  ocrDocument       OCRDocument?       @relation(fields: [ocrDocumentId], references: [id], onDelete: SetNull)
+  items             InvoiceItem[]
+  stockTransactions StockTransaction[]
+  paymentReminders  PaymentReminder[]
+
+  @@index([invoiceNumber])
+  @@index([invoiceDate])
+  @@index([status])
+}
+
+model InvoiceItem {
+  id                 String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  invoiceId          String   @db.Uuid
+  productId          String   @db.Uuid
+  quantity           Decimal  @db.Decimal(15, 3)
+  unitPrice          Decimal  @db.Decimal(15, 4)
+  discountPercentage Decimal  @default(0.00) @db.Decimal(5, 2)
+  discountAmount     Decimal  @default(0.00) @db.Decimal(15, 2)
+  taxableAmount      Decimal  @db.Decimal(15, 2)
+  gstRate            Decimal  @db.Decimal(5, 2)
+  cgst               Decimal  @default(0.00) @db.Decimal(15, 2)
+  sgst               Decimal  @default(0.00) @db.Decimal(15, 2)
+  igst               Decimal  @default(0.00) @db.Decimal(15, 2)
+  totalAmount        Decimal  @db.Decimal(15, 2)
+  createdAt          DateTime @default(now()) @db.Timestamptz
+
+  invoice Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Restrict)
+
+  @@index([invoiceId])
+  @@index([productId])
+}
+
+model StockTransaction {
+  id              String               @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  productId       String               @db.Uuid
+  quantity        Decimal              @db.Decimal(15, 3)
+  type            StockTransactionType
+  reason          StockReason
+  invoiceId       String?              @db.Uuid
+  purchaseId      String?              @db.Uuid
+  referenceNumber String?
+  notes           String?              @db.Text
+  createdAt       DateTime             @default(now()) @db.Timestamptz
+  createdById     String?              @db.Uuid
+
+  product   Product   @relation(fields: [productId], references: [id], onDelete: Restrict)
+  invoice   Invoice?  @relation(fields: [invoiceId], references: [id], onDelete: SetNull)
+  purchase  Purchase? @relation(fields: [purchaseId], references: [id], onDelete: SetNull)
+  createdBy User?     @relation("StockTransactionCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+
+  @@index([productId, type])
+  @@index([reason])
+}
+
+model OCRDocument {
+  id              String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  fileName        String
+  fileUrl         String
+  documentType    OCRDocumentType
+  status          OCRStatus       @default(PENDING)
+  extractedData   Json?
+  confidenceScore Decimal?        @db.Decimal(5, 2)
+  errorMessage    String?         @db.Text
+  reviewed        Boolean         @default(false)
+  reviewedAt      DateTime?       @db.Timestamptz
+  reviewedById    String?         @db.Uuid
+
+  reviewedBy User?     @relation("OCRDocumentReviewedBy", fields: [reviewedById], references: [id], onDelete: SetNull)
+  invoices   Invoice[]
+  purchases  Purchase[]
+
+  @@index([status])
+  @@index([createdAt])
+  createdAt DateTime @default(now()) @db.Timestamptz
+  updatedAt DateTime @updatedAt @db.Timestamptz
+}
+
+model PaymentReminder {
+  id                String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  invoiceId         String            @db.Uuid
+  reminderFrequency ReminderFrequency @default(WEEKLY)
+  channel           CommunicationChannel @default(DASHBOARD)
+  nextReminderDate  DateTime          @db.Date
+  isActive          Boolean           @default(true)
+  createdAt         DateTime          @default(now()) @db.Timestamptz
+  updatedAt         DateTime          @updatedAt @db.Timestamptz
+
+  invoice      Invoice       @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+  reminderLogs ReminderLog[]
+
+  @@index([nextReminderDate])
+  @@index([invoiceId])
+}
+
+model ReminderLog {
+  id           String               @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  reminderId   String               @db.Uuid
+  channel      CommunicationChannel
+  recipient    String
+  status       ReminderStatus
+  sentAt       DateTime             @default(now()) @db.Timestamptz
+  failureReason String?             @db.Text
+
+  reminder PaymentReminder @relation(fields: [reminderId], references: [id], onDelete: Cascade)
+}
+
+model AuditLog {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId     String?  @db.Uuid
+  action     String
+  entityName String
+  entityId   String?  @db.Uuid
+  oldValues  Json?
+  newValues  Json?
+  ipAddress  String?
+  createdAt  DateTime @default(now()) @db.Timestamptz
+
+  user User? @relation("AuditLogUser", fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([entityName, entityId])
+  @@index([createdAt(sort: Desc)])
+}
+
+enum PurchaseStatus {
+  PENDING
+  PAID
+  CANCELLED
+}
+
+model Purchase {
+  id                  String             @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  purchaseNumber      String             @unique
+  purchaseDate        DateTime           @db.Date
+  dueDate             DateTime           @db.Date
+  supplierId          String             @db.Uuid
+  status              PurchaseStatus     @default(PENDING)
+  subtotal            Decimal            @db.Decimal(15, 2)
+  discountAmount      Decimal            @default(0.00) @db.Decimal(15, 2)
+  cgst                Decimal            @default(0.00) @db.Decimal(15, 2)
+  sgst                Decimal            @default(0.00) @db.Decimal(15, 2)
+  igst                Decimal            @default(0.00) @db.Decimal(15, 2)
+  roundOff            Decimal            @default(0.00) @db.Decimal(5, 2)
+  grandTotal          Decimal            @db.Decimal(15, 2)
+  originalInvoiceNo   String?
+  invoiceUrl          String?
+  notes               String?            @db.Text
+  ocrDocumentId       String?            @db.Uuid
+  createdAt           DateTime           @default(now()) @db.Timestamptz
+  updatedAt           DateTime           @updatedAt @db.Timestamptz
+  createdById         String?            @db.Uuid
+  updatedById         String?            @db.Uuid
+
+  supplier            Supplier           @relation(fields: [supplierId], references: [id], onDelete: Restrict)
+  createdBy           User?              @relation("PurchaseCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  updatedBy           User?              @relation("PurchaseUpdatedBy", fields: [updatedById], references: [id], onDelete: SetNull)
+  ocrDocument         OCRDocument?       @relation(fields: [ocrDocumentId], references: [id], onDelete: SetNull)
+  items               PurchaseItem[]
+  stockTransactions   StockTransaction[]
+
+  @@index([purchaseNumber])
+  @@index([purchaseDate])
+  @@index([status])
+}
+
+model PurchaseItem {
+  id                 String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  purchaseId         String   @db.Uuid
+  productId          String   @db.Uuid
+  quantity           Decimal  @db.Decimal(15, 3)
+  unitPrice          Decimal  @db.Decimal(15, 4)
+  discountPercentage Decimal  @default(0.00) @db.Decimal(5, 2)
+  discountAmount     Decimal  @default(0.00) @db.Decimal(15, 2)
+  taxableAmount      Decimal  @db.Decimal(15, 2)
+  gstRate            Decimal  @db.Decimal(5, 2)
+  cgst               Decimal  @default(0.00) @db.Decimal(15, 2)
+  sgst               Decimal  @default(0.00) @db.Decimal(15, 2)
+  igst               Decimal  @default(0.00) @db.Decimal(15, 2)
+  totalAmount        Decimal  @db.Decimal(15, 2)
+  createdAt          DateTime @default(now()) @db.Timestamptz
+
+  purchase Purchase @relation(fields: [purchaseId], references: [id], onDelete: Cascade)
+  product  Product  @relation(fields: [productId], references: [id], onDelete: Restrict)
+
+  @@index([purchaseId])
+  @@index([productId])
+}

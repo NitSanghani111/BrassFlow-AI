@@ -1,0 +1,56 @@
+[2026-06-30 01:08:01:81] [[31merror[39m]: [31mFailed fetching OCR docs: Cannot read properties of undefined (reading 'findMany')[39m
+[2026-06-30 01:08:06:86] [[31merror[39m]: [31mFailed fetching OCR docs: Cannot read properties of undefined (reading 'findMany')[39m
+[2026-06-30 01:44:06:446] [[31merror[39m]: [31mGlobal Error: Unexpected field[39m
+[2026-06-30 01:46:29:4629] [[31merror[39m]: [31mFailed to create purchase: [39m
+[31mInvalid `tx.purchase.create()` invocation in[39m
+[31mC:\Users\nit05\OneDrive\Desktop\startup_idea\BrassFlow AI\backend\src\repositories\purchase.repository.ts:154:42[39m
+
+[31m  151 const roundOff = grandTotalRounded - rawGrandTotal;[39m
+[31m  152 [39m
+[31m  153 // 7. Save Purchase Entry[39m
+[31m→ 154 const purchase = await tx.purchase.create({[39m
+[31m        data: {[39m
+[31m          purchaseNumber: "PUR-2026-00001",[39m
+[31m          purchaseDate: "2026-06-28",[39m
+[31m                        ~~~~~~~~~~~~[39m
+[31m          dueDate: "2026-07-14",[39m
+[31m          supplierId: "009fd295-e2aa-4218-9967-f53eb779464e",[39m
+[31m          status: "PENDING",[39m
+[31m          subtotal: 630000,[39m
+[31m          discountAmount: 0,[39m
+[31m          cgst: 0,[39m
+[31m          sgst: 0,[39m
+[31m          igst: 113400,[39m
+[31m          roundOff: 0,[39m
+[31m          grandTotal: 743400,[39m
+[31m          originalInvoiceNo: "SMS-2026-049",[39m
+[31m          invoiceUrl: undefined,[39m
+[31m          ocrDocumentId: "2a27329e-b544-4128-a5f3-c46d739728a8",[39m
+[31m          notes: "",[39m
+[31m          createdById: "54e93af8-a155-4452-819d-3c1e7150fdd3",[39m
+[31m          items: {[39m
+[31m            create: [[39m
+[31m              {[39m
+[31m                productId: "891020e2-8a7e-49ec-92bc-61d5a4cda4cb",[39m
+[31m                quantity: 1500,[39m
+[31m                unitPrice: 420,[39m
+[31m                discountPercentage: 0,[39m
+[31m                discountAmount: 0,[39m
+[31m                taxableAmount: 630000,[39m
+[31m                gstRate: 18,[39m
+[31m                cgst: 0,[39m
+[31m                sgst: 0,[39m
+[31m                igst: 113400,[39m
+[31m                totalAmount: 743400[39m
+[31m              }[39m
+[31m            ][39m
+[31m          }[39m
+[31m        }[39m
+[31m      })[39m
+
+[31mInvalid value for argument `purchaseDate`: premature end of input. Expected ISO-8601 DateTime.[39m
+[2026-06-30 01:48:20:4820] [[31merror[39m]: [31mFailed to create invoice: Insufficient stock for product 16mm Hexagonal Brass Rod (Grade II). Available: 1200, Required: 3333[39m
+[2026-06-30 01:48:39:4839] [[31merror[39m]: [31mFailed to create invoice: data.invoiceDate.toISOString is not a function[39m
+[2026-06-30 01:48:51:4851] [[31merror[39m]: [31mFailed to create invoice: data.invoiceDate.toISOString is not a function[39m
+[2026-06-30 01:59:33:5933] [[31merror[39m]: [31mFailed to create invoice: data.invoiceDate.toISOString is not a function[39m
+[2026-06-30 02:01:00:10] [[31merror[39m]: [31mFailed to create invoice: data.invoiceDate.toISOString is not a function[39m
