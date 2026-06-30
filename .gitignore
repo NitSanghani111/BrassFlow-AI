@@ -1,1 +1,43 @@
-node_modules
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment files (NEVER commit real .env with passwords)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+frontend/.env
+
+# Build outputs
+dist/
+build/
+backend/dist/
+
+# Prisma generated client (regenerated with npx prisma generate)
+node_modules/.prisma/
+
+# Uploaded files (invoice PDFs, OCR documents — too large for git)
+backend/uploads/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor config
+.vscode/settings.json
+.idea/
+
+# Temporary test files
+generate_test_pdf.js
+*.pdf

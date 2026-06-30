@@ -424,6 +424,7 @@ body {
 .table-container {
   padding: 24px;
   text-align: left;
+  overflow-x: auto;
 }
 
 .premium-table {
@@ -862,6 +863,10 @@ body {
   gap: 10px;
   align-items: center;
   transition: border-color 0.2s;
+}
+
+.line-item-row .form-input {
+  padding-left: 12px;
 }
 
 .line-item-row:hover { border-color: rgba(217, 119, 6, 0.3); }

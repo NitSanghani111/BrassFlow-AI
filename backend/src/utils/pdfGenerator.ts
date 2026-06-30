@@ -1,6 +1,9 @@
 import PDFDocument from 'pdfkit';
 import fs from 'fs';
 import path from 'path';
+import QRCode from 'qrcode';
+import { logger } from './logger';
+import { prisma } from '../config/prisma';
 
 interface PDFInvoiceItem {
   sku: string;
@@ -10,6 +13,7 @@ interface PDFInvoiceItem {
   unit: string;
   unitPrice: number;
   discountAmount: number;
+  discountPercentage: number;
   taxableAmount: number;
   gstRate: number;
   cgst: number;
@@ -99,7 +103,7 @@ function convertNumberToWords(num: number): string {
 }
 
 export function generateInvoicePDF(data: PDFInvoiceData): Promise<string> {
-  return new Promise((resolve, reject) => {
+  return new Promise(async (resolve, reject) => {
     try {
       // Create A4 PDF with exact margins
       const doc = new PDFDocument({ size: 'A4', margin: 20 });
@@ -116,6 +120,30 @@ export function generateInvoicePDF(data: PDFInvoiceData): Promise<string> {
       
       doc.pipe(writeStream);
 
+      // Resolve Dynamic Owner Config from DB, fall back to Env/Defaults
+      let ownerName = process.env.OWNER_COMPANY_NAME || 'BRASSFLOW INDUSTRIES';
+      let ownerAddress = process.env.OWNER_ADDRESS || 'Plot 42, GIDC Industrial Estate Phase II, Jamnagar, Gujarat, 361004';
+      let ownerGstin = process.env.OWNER_GSTIN || '24AAACB1234A1Z0';
+      let ownerPan = process.env.OWNER_PAN || 'AAACB1234A';
+      let ownerEmail = process.env.OWNER_EMAIL || 'accounts@brassflow.in';
+      let ownerPhone = process.env.OWNER_PHONE || '+91 98765 43210';
+      let ownerLogo = process.env.OWNER_LOGO_PATH || '';
+
+      try {
+        const dbProfile = await prisma.businessProfile.findFirst();
+        if (dbProfile) {
+          ownerName = dbProfile.companyName;
+          ownerAddress = dbProfile.address;
+          ownerGstin = dbProfile.gstin || ownerGstin;
+          ownerPan = dbProfile.pan || ownerPan;
+          ownerEmail = dbProfile.email || ownerEmail;
+          ownerPhone = dbProfile.phone || ownerPhone;
+          ownerLogo = dbProfile.logoUrl || ownerLogo;
+        }
+      } catch (dbErr) {
+        logger.error('Failed to query BusinessProfile from database, falling back to environment: ', dbErr);
+      }
+
       // --- COLOR PALETTE & STYLES ---
       const strokeColor = '#000000';
       const secondaryStroke = '#cccccc';
@@ -131,15 +159,25 @@ export function generateInvoicePDF(data: PDFInvoiceData): Promise<string> {
          .text('TAX INVOICE', 20, 30, { align: 'center', width: 555 });
 
       // 3. Supplier Details Block
-      doc.font('Helvetica-Bold').fontSize(10).text('BRASSFLOW INDUSTRIES', 25, 60);
-      doc.font('Helvetica').fontSize(8)
-         .text('Plot 42, GIDC Industrial Estate Phase II, Jamnagar, Gujarat, 361004', 25, 74)
-         .text('GSTIN: 24AAACB1234A1Z0  |  PAN: AAACB1234A', 25, 86)
-         .text('Email: accounts@brassflow.in  |  Phone: +91 98765 43210', 25, 98);
+      let textStartY = 60;
+      if (ownerLogo && fs.existsSync(ownerLogo)) {
+        try {
+          doc.image(ownerLogo, 25, 55, { height: 35 });
+          textStartY = 95;
+        } catch (logoErr) {
+          logger.error('Failed to draw company logo', logoErr);
+          doc.font('Helvetica-Bold').fontSize(10).text(ownerName, 25, 60);
+          textStartY = 74;
+        }
+      } else {
+        doc.font('Helvetica-Bold').fontSize(10).text(ownerName, 25, 60);
+        textStartY = 74;
+      }
 
-      // QR Code Box Placeholder
-      doc.rect(490, 55, 75, 75).strokeColor(secondaryStroke).stroke();
-      doc.fontSize(6).fillColor('#666666').text('GST QR CODE\nPLACEHOLDER', 495, 85, { align: 'center', width: 65 });
+      doc.font('Helvetica').fontSize(8)
+         .text(ownerAddress, 25, textStartY)
+         .text(`GSTIN: ${ownerGstin}  |  PAN: ${ownerPan}`, 25, textStartY + 12)
+         .text(`Email: ${ownerEmail}  |  Phone: ${ownerPhone}`, 25, textStartY + 24);
 
       // Horizontal separator line at y = 140
       doc.moveTo(20, 140).lineTo(575, 140).strokeColor(strokeColor).stroke();
@@ -157,7 +195,7 @@ export function generateInvoicePDF(data: PDFInvoiceData): Promise<string> {
          .text(`Address: ${data.customerStreet}`, 25, 172)
          .text(`${data.customerCity}, ${data.customerState} - ${data.customerZip}`, 25, 184)
          .text(`GSTIN: ${data.customerGstin || 'Unregistered'}`, 25, 196)
-         .text(`State: ${data.customerState} (Code: 24)`, 25, 208);
+         .text(`State: ${data.customerState}`, 25, 208);
 
       // Column 2: Details of Consignee (Shipped To)
       doc.font('Helvetica-Bold').text('Details of Consignee (Shipped To):', 215, 145);
@@ -166,7 +204,7 @@ export function generateInvoicePDF(data: PDFInvoiceData): Promise<string> {
          .text(`Address: ${data.customerStreet}`, 215, 172)
          .text(`${data.customerCity}, ${data.customerState} - ${data.customerZip}`, 215, 184)
          .text(`GSTIN: ${data.customerGstin || 'Unregistered'}`, 215, 196)
-         .text(`State: ${data.customerState} (Code: 24)`, 215, 208);
+         .text(`State: ${data.customerState}`, 215, 208);
 
       // Column 3: Invoice Info Grid
       doc.font('Helvetica-Bold').text('Invoice Details:', 405, 145);
@@ -219,7 +257,7 @@ export function generateInvoicePDF(data: PDFInvoiceData): Promise<string> {
         // S.No
         doc.text(String(index + 1), 22, currentY, { width: 25, align: 'center' });
         // Name & SKU
-        doc.text(`${item.name} (${item.sku})`, 50, currentY, { width: 135 });
+        doc.text(`${item.name} (${item.sku})`, 50, currentY, { width: 135, height: 12, ellipsis: true });
         // HSN
         doc.text(item.hsnCode || '7407', 195, currentY, { width: 45, align: 'center' });
         // Qty
@@ -227,7 +265,7 @@ export function generateInvoicePDF(data: PDFInvoiceData): Promise<string> {
         // Rate
         doc.text(item.unitPrice.toFixed(2), 285, currentY, { width: 45, align: 'right' });
         // Disc
-        doc.text(`${item.discountAmount > 0 ? '5%' : '0%'}`, 335, currentY, { width: 30, align: 'right' });
+        doc.text(`${item.discountPercentage || 0}%`, 335, currentY, { width: 30, align: 'right' });
         // Taxable
         doc.text(item.taxableAmount.toFixed(2), 370, currentY, { width: 55, align: 'right' });
         // GST Rate
@@ -265,7 +303,7 @@ export function generateInvoicePDF(data: PDFInvoiceData): Promise<string> {
       // Left Side: Terms and Bank Info
       doc.font('Helvetica-Bold').fontSize(8).text('Bank Account Credentials:', 25, splitY + 10);
       doc.font('Helvetica')
-         .text('Account Name: BrassFlow Industries Ltd', 25, splitY + 22)
+         .text(`Account Name: ${ownerName} Ltd`, 25, splitY + 22)
          .text('Banker Name: State Bank of India', 25, splitY + 34)
          .text('Account No: 334455667788', 25, splitY + 46)
          .text('IFSC Code: SBIN0004561 | Branch: GIDC Jamnagar', 25, splitY + 58);
@@ -311,7 +349,7 @@ export function generateInvoicePDF(data: PDFInvoiceData): Promise<string> {
       // Signature Box Block at Bottom Right
       const signY = 720;
       doc.moveTo(350, signY).lineTo(575, signY).strokeColor(strokeColor).stroke();
-      doc.fontSize(7).fillColor('#333333').font('Helvetica-Bold').text('For BRASSFLOW INDUSTRIES', 360, signY + 8, { align: 'right', width: 200 });
+      doc.fontSize(7).fillColor('#333333').font('Helvetica-Bold').text(`For ${ownerName.toUpperCase()}`, 360, signY + 8, { align: 'right', width: 200 });
       doc.fontSize(7).font('Helvetica').text('Authorized Signatory', 360, signY + 62, { align: 'right', width: 200 });
 
       // 9. Footer

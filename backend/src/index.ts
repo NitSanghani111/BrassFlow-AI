@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+// Load environment variables before any other imports
+dotenv.config();
+
 import app from './app';
 import { logger } from './utils/logger';
 import { prisma } from './config/prisma';

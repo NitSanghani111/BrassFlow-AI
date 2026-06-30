@@ -54,3 +54,51 @@
 [2026-06-30 01:48:51:4851] [[31merror[39m]: [31mFailed to create invoice: data.invoiceDate.toISOString is not a function[39m
 [2026-06-30 01:59:33:5933] [[31merror[39m]: [31mFailed to create invoice: data.invoiceDate.toISOString is not a function[39m
 [2026-06-30 02:01:00:10] [[31merror[39m]: [31mFailed to create invoice: data.invoiceDate.toISOString is not a function[39m
+[2026-06-30 12:13:03:133] [[31merror[39m]: [31mFailed to create product: [39m
+[31mInvalid `prisma.product.create()` invocation in[39m
+[31m/home/nit.sanghani/Desktop/BrassFlow-AI/backend/src/repositories/product.repository.ts:35:27[39m
+
+[31m  32 }[39m
+[31m  33 [39m
+[31m  34 async create(data: Prisma.ProductCreateInput): Promise<Product> {[39m
+[31m→ 35   return prisma.product.create({[39m
+[31m         data: {[39m
+[31m           sku: "ROD-13",[39m
+[31m           name: "Brass rod",[39m
+[31m           description: "stadard",[39m
+[31m           ~~~~~~~~~~~[39m
+[31m           category: "Brass Rods",[39m
+[31m           hsnCode: "74072110",[39m
+[31m           gstRate: 18,[39m
+[31m           unit: "KG",[39m
+[31m           purchasePrice: 120000,[39m
+[31m           sellingPrice: 2400000,[39m
+[31m           openingStock: 1299,[39m
+[31m           currentStock: 1299,[39m
+[31m           minimumStock: 100,[39m
+[31m           reservedStock: 0,[39m
+[31m       ?   id?: String,[39m
+[31m       ?   internalCode?: String | Null,[39m
+[31m       ?   customerPartNumber?: String | Null,[39m
+[31m       ?   material?: String | Null,[39m
+[31m       ?   weight?: Decimal | Null,[39m
+[31m       ?   finish?: String | Null,[39m
+[31m       ?   drawingNumber?: String | Null,[39m
+[31m       ?   revision?: String | Null,[39m
+[31m       ?   cadDrawingUrl?: String | Null,[39m
+[31m       ?   imageUrl?: String | Null,[39m
+[31m       ?   createdAt?: DateTime,[39m
+[31m       ?   updatedAt?: DateTime,[39m
+[31m       ?   isDeleted?: Boolean,[39m
+[31m       ?   deletedAt?: DateTime | Null,[39m
+[31m       ?   createdBy?: UserCreateNestedOneWithoutCreatedProductsInput,[39m
+[31m       ?   updatedBy?: UserCreateNestedOneWithoutUpdatedProductsInput,[39m
+[31m       ?   invoiceItems?: InvoiceItemCreateNestedManyWithoutProductInput,[39m
+[31m       ?   purchaseItems?: PurchaseItemCreateNestedManyWithoutProductInput,[39m
+[31m       ?   stockTransactions?: StockTransactionCreateNestedManyWithoutProductInput[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mUnknown argument `description`. Available options are marked with ?.[39m
+[2026-06-30 12:28:48:2848] [[31merror[39m]: [31mFailed to send email to nitsanghani1@gmail.com: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-30ee3170ef9sm7377933eec.16 - gsmtp[39m

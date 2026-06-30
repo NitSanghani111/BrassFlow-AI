@@ -721,3 +721,1120 @@
 [2026-06-30 02:15:43:1543] [[32minfo[39m]: [32mFetching all payment reminders[39m
 [2026-06-30 02:15:43:1543] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
 [2026-06-30 02:15:43:1543] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:05:12:512] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 11:05:12:512] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 11:05:12:512] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 11:05:12:512] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 11:05:12:512] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 11:05:59:559] [[35mhttp[39m]: [35mPOST /api/auth/login[39m
+[2026-06-30 11:05:59:559] [[32minfo[39m]: [32mLogin attempt for email: admin@brassflow.in[39m
+[2026-06-30 11:06:00:60] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:06:00:60] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:06:00:60] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:06:00:60] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:06:22:622] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:06:22:622] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:07:31:731] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 11:07:31:731] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 11:07:31:731] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:07:31:731] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:07:31:731] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:07:31:731] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:07:32:732] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:07:32:732] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:07:33:733] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:07:33:733] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:07:33:733] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:07:33:733] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:07:33:733] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:07:33:733] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:07:34:734] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:07:34:734] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:07:34:734] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:07:34:734] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:07:34:734] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:07:34:734] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:07:34:734] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:07:34:734] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:07:36:736] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:07:36:736] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:07:36:736] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:07:36:736] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:07:36:736] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:07:36:736] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:07:36:736] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:07:36:736] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:07:36:736] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:07:36:736] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:20:23:2023] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 11:20:23:2023] [[32minfo[39m]: [32mHTTP server closed.[39m
+[2026-06-30 11:20:23:2023] [[32minfo[39m]: [32mDatabase connection closed.[39m
+[2026-06-30 11:20:24:2024] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 11:20:24:2024] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 11:20:24:2024] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 11:20:24:2024] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 11:20:24:2024] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 11:27:18:2718] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:27:18:2718] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:27:19:2719] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:27:19:2719] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:27:24:2724] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:27:24:2724] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:27:24:2724] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:27:24:2724] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:27:24:2724] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:27:24:2724] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:27:24:2724] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:27:24:2724] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:27:24:2724] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:27:24:2724] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:27:25:2725] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:27:25:2725] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:27:26:2726] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 11:27:26:2726] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 11:27:26:2726] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:27:26:2726] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:27:26:2726] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:27:26:2726] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:27:27:2727] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:27:27:2727] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:27:28:2728] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:27:28:2728] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:33:22:3322] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:33:22:3322] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:33:28:3328] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:33:28:3328] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:33:29:3329] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:33:29:3329] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:33:33:3333] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:33:33:3333] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:33:38:3338] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:33:38:3338] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:33:38:3338] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:33:38:3338] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:33:38:3338] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:33:38:3338] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:33:38:3338] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:33:38:3338] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:33:38:3338] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:33:38:3338] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:33:41:3341] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:33:41:3341] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:33:43:3343] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 11:33:43:3343] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 11:33:43:3343] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:33:43:3343] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:33:43:3343] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:33:43:3343] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:33:45:3345] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:33:45:3345] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:33:46:3346] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:33:46:3346] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:33:47:3347] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:33:47:3347] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:33:53:3353] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:33:53:3353] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:33:55:3355] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:33:55:3355] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:33:55:3355] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:33:55:3355] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:34:00:340] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:34:00:340] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:34:03:343] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:34:03:343] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:34:03:343] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:34:03:343] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:34:05:345] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 11:34:05:345] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 11:34:05:345] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:34:05:345] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:34:05:345] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:34:05:345] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:34:06:346] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:34:06:346] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:34:06:346] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:34:06:346] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:34:06:346] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:34:06:346] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:34:07:347] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:34:07:347] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:34:07:347] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:34:07:347] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:34:07:347] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 11:34:07:347] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 11:34:07:347] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:34:07:347] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:34:08:348] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:34:08:348] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:34:10:3410] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:34:10:3410] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:34:11:3411] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:34:11:3411] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:34:11:3411] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:34:11:3411] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:34:22:3422] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:34:22:3422] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:34:23:3423] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:34:23:3423] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:34:23:3423] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:34:23:3423] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:44:35:4435] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:44:35:4435] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:44:41:4441] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:44:41:4441] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:44:41:4441] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:44:41:4441] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:44:42:4442] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:44:42:4442] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:44:56:4456] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 11:44:56:4456] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 11:44:56:4456] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:44:56:4456] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:44:56:4456] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:44:56:4456] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:44:57:4457] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:44:57:4457] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:44:58:4458] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:44:58:4458] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:44:58:4458] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:44:58:4458] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:44:58:4458] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:44:58:4458] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:44:58:4458] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:44:58:4458] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:44:58:4458] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:44:58:4458] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:44:59:4459] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:44:59:4459] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:45:00:450] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:45:00:450] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:45:00:450] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:45:00:450] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:45:00:450] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:45:00:450] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:45:00:450] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:45:00:450] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:45:00:450] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:45:00:450] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:45:08:458] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:45:08:458] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:45:08:458] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 11:45:08:458] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 11:45:08:458] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:45:08:458] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:45:08:458] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:45:08:458] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:45:10:4510] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:45:10:4510] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:45:10:4510] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:45:10:4510] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:45:13:4513] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:45:13:4513] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:45:13:4513] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:45:13:4513] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:45:25:4525] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:45:25:4525] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:45:25:4525] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:45:25:4525] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:45:25:4525] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:45:25:4525] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:45:25:4525] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:45:25:4525] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:45:25:4525] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:45:25:4525] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:52:18:5218] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:52:18:5218] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:52:19:5219] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:52:19:5219] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:52:20:5220] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:52:20:5220] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:52:20:5220] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:52:20:5220] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:52:20:5220] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:52:20:5220] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:52:20:5220] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:52:20:5220] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:52:20:5220] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:52:20:5220] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:52:21:5221] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 11:52:21:5221] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 11:52:21:5221] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:52:21:5221] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:52:21:5221] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:52:21:5221] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:52:22:5222] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:52:22:5222] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:52:23:5223] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:52:23:5223] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:52:23:5223] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:52:23:5223] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:52:23:5223] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:52:23:5223] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:52:23:5223] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:52:23:5223] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:52:23:5223] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:52:23:5223] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:52:23:5223] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 11:52:23:5223] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 11:52:24:5224] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:52:24:5224] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:52:24:5224] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:52:24:5224] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:52:24:5224] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:52:24:5224] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:52:25:5225] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 11:52:25:5225] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 11:52:26:5226] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 11:52:26:5226] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 11:52:26:5226] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:52:26:5226] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:52:40:5240] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 11:52:40:5240] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 11:52:40:5240] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:52:40:5240] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 11:52:40:5240] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 11:52:40:5240] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 11:52:40:5240] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 11:52:40:5240] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 11:52:40:5240] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 11:52:40:5240] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 11:53:08:538] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 11:53:08:538] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:04:52:452] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 12:04:52:452] [[32minfo[39m]: [32mHTTP server closed.[39m
+[2026-06-30 12:04:52:452] [[32minfo[39m]: [32mDatabase connection closed.[39m
+[2026-06-30 12:04:53:453] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 12:04:53:453] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 12:04:53:453] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 12:04:53:453] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 12:04:53:453] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 12:08:16:816] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:16:816] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:23:823] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:23:823] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:24:824] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:24:824] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:25:825] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:25:825] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:25:825] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:25:825] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:26:826] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:26:826] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:26:826] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:26:826] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:26:826] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:26:826] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:26:826] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:26:826] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:27:827] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:27:827] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:27:827] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:27:827] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:27:827] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:27:827] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:27:827] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:27:827] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:08:27:827] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:08:27:827] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:11:30:1130] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 12:11:30:1130] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 12:11:35:1135] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 12:11:35:1135] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 12:11:35:1135] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 12:11:35:1135] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 12:11:35:1135] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:11:35:1135] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:11:40:1140] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:11:40:1140] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:11:59:1159] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 12:11:59:1159] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 12:11:59:1159] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:11:59:1159] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:11:59:1159] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:11:59:1159] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:11:59:1159] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:11:59:1159] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:12:00:120] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 12:12:00:120] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 12:12:01:121] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 12:12:01:121] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 12:12:03:123] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:12:03:123] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:13:03:133] [[35mhttp[39m]: [35mPOST /api/products[39m
+[2026-06-30 12:13:03:133] [[32minfo[39m]: [32mCreating product with SKU: ROD-13[39m
+[2026-06-30 12:13:03:133] [[31merror[39m]: [31mFailed to create product: [39m
+[31mInvalid `prisma.product.create()` invocation in[39m
+[31m/home/nit.sanghani/Desktop/BrassFlow-AI/backend/src/repositories/product.repository.ts:35:27[39m
+
+[31m  32 }[39m
+[31m  33 [39m
+[31m  34 async create(data: Prisma.ProductCreateInput): Promise<Product> {[39m
+[31m→ 35   return prisma.product.create({[39m
+[31m         data: {[39m
+[31m           sku: "ROD-13",[39m
+[31m           name: "Brass rod",[39m
+[31m           description: "stadard",[39m
+[31m           ~~~~~~~~~~~[39m
+[31m           category: "Brass Rods",[39m
+[31m           hsnCode: "74072110",[39m
+[31m           gstRate: 18,[39m
+[31m           unit: "KG",[39m
+[31m           purchasePrice: 120000,[39m
+[31m           sellingPrice: 2400000,[39m
+[31m           openingStock: 1299,[39m
+[31m           currentStock: 1299,[39m
+[31m           minimumStock: 100,[39m
+[31m           reservedStock: 0,[39m
+[31m       ?   id?: String,[39m
+[31m       ?   internalCode?: String | Null,[39m
+[31m       ?   customerPartNumber?: String | Null,[39m
+[31m       ?   material?: String | Null,[39m
+[31m       ?   weight?: Decimal | Null,[39m
+[31m       ?   finish?: String | Null,[39m
+[31m       ?   drawingNumber?: String | Null,[39m
+[31m       ?   revision?: String | Null,[39m
+[31m       ?   cadDrawingUrl?: String | Null,[39m
+[31m       ?   imageUrl?: String | Null,[39m
+[31m       ?   createdAt?: DateTime,[39m
+[31m       ?   updatedAt?: DateTime,[39m
+[31m       ?   isDeleted?: Boolean,[39m
+[31m       ?   deletedAt?: DateTime | Null,[39m
+[31m       ?   createdBy?: UserCreateNestedOneWithoutCreatedProductsInput,[39m
+[31m       ?   updatedBy?: UserCreateNestedOneWithoutUpdatedProductsInput,[39m
+[31m       ?   invoiceItems?: InvoiceItemCreateNestedManyWithoutProductInput,[39m
+[31m       ?   purchaseItems?: PurchaseItemCreateNestedManyWithoutProductInput,[39m
+[31m       ?   stockTransactions?: StockTransactionCreateNestedManyWithoutProductInput[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mUnknown argument `description`. Available options are marked with ?.[39m
+[2026-06-30 12:13:09:139] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:13:09:139] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:13:11:1311] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 12:13:11:1311] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 12:13:12:1312] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:13:12:1312] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:20:37:2037] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 12:20:37:2037] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 12:20:37:2037] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 12:20:37:2037] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 12:20:37:2037] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:20:37:2037] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:20:39:2039] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:20:39:2039] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:20:40:2040] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 12:20:40:2040] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 12:20:40:2040] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:20:40:2040] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:20:40:2040] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:20:40:2040] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:20:40:2040] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:20:40:2040] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:20:40:2040] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 12:20:40:2040] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 12:20:46:2046] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:20:46:2046] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:20:48:2048] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 12:20:48:2048] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 12:20:48:2048] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:20:48:2048] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:22:45:2245] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 12:22:45:2245] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 12:22:45:2245] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:22:45:2245] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:23:36:2336] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:23:36:2336] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:24:30:2430] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:24:30:2430] [[33mwarn[39m]: [33mValidation failed: [{"validation":"regex","code":"invalid_string","message":"Invalid PAN structure","path":["body","pan"]}][39m
+[2026-06-30 12:25:16:2516] [[35mhttp[39m]: [35mPOST /api/customers[39m
+[2026-06-30 12:25:16:2516] [[32minfo[39m]: [32mCreating customer: aksar Enterprise[39m
+[2026-06-30 12:25:16:2516] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:25:16:2516] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:26:53:2653] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 12:26:53:2653] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 12:27:27:2727] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 12:27:27:2727] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 12:27:27:2727] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:27:27:2727] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:27:27:2727] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:27:27:2727] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:27:27:2727] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:27:27:2727] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:27:27:2727] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 12:27:27:2727] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 12:27:58:2758] [[35mhttp[39m]: [35mPOST /api/invoices[39m
+[2026-06-30 12:27:58:2758] [[32minfo[39m]: [32mCreating invoice requested by user: 5ba4e309-30c9-4f99-aea6-26d9762e5ba9[39m
+[2026-06-30 12:27:58:2758] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 12:27:58:2758] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 12:27:58:2758] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:27:58:2758] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:27:58:2758] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:27:58:2758] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:27:58:2758] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:27:58:2758] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:27:58:2758] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 12:27:58:2758] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 12:28:41:2841] [[35mhttp[39m]: [35mPOST /api/reminders[39m
+[2026-06-30 12:28:41:2841] [[32minfo[39m]: [32mCreating payment reminder for invoice: ae0d782a-7f13-4b24-9e43-5eeb6cf23ece[39m
+[2026-06-30 12:28:41:2841] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 12:28:41:2841] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 12:28:41:2841] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:28:41:2841] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:28:41:2841] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:28:41:2841] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:28:41:2841] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:28:41:2841] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:28:41:2841] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 12:28:41:2841] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 12:28:45:2845] [[35mhttp[39m]: [35mPOST /api/reminders/0540f8a9-ca14-4f22-bf2f-0a385716a806/trigger[39m
+[2026-06-30 12:28:45:2845] [[32minfo[39m]: [32mManual reminder dispatch requested for ID: 0540f8a9-ca14-4f22-bf2f-0a385716a806[39m
+[2026-06-30 12:28:45:2845] [[32minfo[39m]: [32mTriggering notification dispatch for payment reminder: 0540f8a9-ca14-4f22-bf2f-0a385716a806[39m
+[2026-06-30 12:28:45:2845] [[32minfo[39m]: [32mSending actual email to nitsanghani1@gmail.com[39m
+[2026-06-30 12:28:48:2848] [[31merror[39m]: [31mFailed to send email to nitsanghani1@gmail.com: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-30ee3170ef9sm7377933eec.16 - gsmtp[39m
+[2026-06-30 12:28:48:2848] [[32minfo[39m]: [32mPayment reminder: 0540f8a9-ca14-4f22-bf2f-0a385716a806 updated. Next follow-up scheduled on: 2026-06-02[39m
+[2026-06-30 12:28:48:2848] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 12:28:48:2848] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 12:28:48:2848] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:28:48:2848] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:28:48:2848] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:28:48:2848] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:28:48:2848] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:28:48:2848] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:28:48:2848] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 12:28:48:2848] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 12:29:30:2930] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 12:29:30:2930] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 12:29:41:2941] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 12:29:41:2941] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 12:29:41:2941] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:29:41:2941] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:30:14:3014] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 12:30:14:3014] [[32minfo[39m]: [32mHTTP server closed.[39m
+[2026-06-30 12:30:14:3014] [[32minfo[39m]: [32mDatabase connection closed.[39m
+[2026-06-30 12:30:15:3015] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 12:30:15:3015] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 12:30:15:3015] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 12:30:15:3015] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 12:30:15:3015] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 12:30:16:3016] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 12:30:16:3016] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 12:31:06:316] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 12:31:06:316] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 12:31:07:317] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:31:07:317] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:31:07:317] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:31:07:317] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:31:07:317] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:31:07:317] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:31:07:317] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 12:31:07:317] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 12:31:13:3113] [[35mhttp[39m]: [35mPOST /api/reminders/0540f8a9-ca14-4f22-bf2f-0a385716a806/trigger[39m
+[2026-06-30 12:31:13:3113] [[32minfo[39m]: [32mManual reminder dispatch requested for ID: 0540f8a9-ca14-4f22-bf2f-0a385716a806[39m
+[2026-06-30 12:31:13:3113] [[32minfo[39m]: [32mTriggering notification dispatch for payment reminder: 0540f8a9-ca14-4f22-bf2f-0a385716a806[39m
+[2026-06-30 12:31:13:3113] [[32minfo[39m]: [32mSending actual email to nitsanghani1@gmail.com[39m
+[2026-06-30 12:31:18:3118] [[32minfo[39m]: [32mEmail sent successfully to nitsanghani1@gmail.com[39m
+[2026-06-30 12:31:18:3118] [[32minfo[39m]: [32mPayment reminder: 0540f8a9-ca14-4f22-bf2f-0a385716a806 updated. Next follow-up scheduled on: 2026-06-03[39m
+[2026-06-30 12:31:18:3118] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 12:31:18:3118] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 12:31:18:3118] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 12:31:18:3118] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 12:31:18:3118] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:31:18:3118] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:31:18:3118] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 12:31:18:3118] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 12:31:18:3118] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 12:31:18:3118] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 12:31:49:3149] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 12:31:49:3149] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 12:31:49:3149] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 12:31:49:3149] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 12:31:49:3149] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 12:31:49:3149] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 12:32:24:3224] [[35mhttp[39m]: [35mPOST /api/ocr/upload[39m
+[2026-06-30 12:32:24:3224] [[32minfo[39m]: [32mReceived file upload: Saraswati_Metal_Scrap_Invoice.pdf of type PURCHASE_BILL[39m
+[2026-06-30 12:32:24:3224] [[32minfo[39m]: [32mStarting asynchronous AI OCR process for document: 98a73c96-8041-404d-8867-9271650be62c[39m
+[2026-06-30 12:32:25:3225] [[35mhttp[39m]: [35mGET /api/ocr/98a73c96-8041-404d-8867-9271650be62c[39m
+[2026-06-30 12:32:25:3225] [[32minfo[39m]: [32mFetching OCR document: 98a73c96-8041-404d-8867-9271650be62c[39m
+[2026-06-30 12:32:26:3226] [[35mhttp[39m]: [35mGET /api/ocr/98a73c96-8041-404d-8867-9271650be62c[39m
+[2026-06-30 12:32:26:3226] [[32minfo[39m]: [32mFetching OCR document: 98a73c96-8041-404d-8867-9271650be62c[39m
+[2026-06-30 12:32:27:3227] [[32minfo[39m]: [32mOCR processing finished successfully for: 98a73c96-8041-404d-8867-9271650be62c[39m
+[2026-06-30 12:32:27:3227] [[35mhttp[39m]: [35mGET /api/ocr/98a73c96-8041-404d-8867-9271650be62c[39m
+[2026-06-30 12:32:27:3227] [[32minfo[39m]: [32mFetching OCR document: 98a73c96-8041-404d-8867-9271650be62c[39m
+[2026-06-30 12:36:23:3623] [[35mhttp[39m]: [35mPOST /api/ocr/upload[39m
+[2026-06-30 12:36:23:3623] [[32minfo[39m]: [32mReceived file upload: Saraswati_Metal_Scrap_Invoice.pdf of type PURCHASE_BILL[39m
+[2026-06-30 12:36:23:3623] [[32minfo[39m]: [32mStarting asynchronous AI OCR process for document: be42a1ad-95d0-4d0c-93e7-548158310cc4[39m
+[2026-06-30 12:36:24:3624] [[35mhttp[39m]: [35mGET /api/ocr/be42a1ad-95d0-4d0c-93e7-548158310cc4[39m
+[2026-06-30 12:36:24:3624] [[32minfo[39m]: [32mFetching OCR document: be42a1ad-95d0-4d0c-93e7-548158310cc4[39m
+[2026-06-30 12:36:25:3625] [[35mhttp[39m]: [35mGET /api/ocr/be42a1ad-95d0-4d0c-93e7-548158310cc4[39m
+[2026-06-30 12:36:25:3625] [[32minfo[39m]: [32mFetching OCR document: be42a1ad-95d0-4d0c-93e7-548158310cc4[39m
+[2026-06-30 12:36:25:3625] [[32minfo[39m]: [32mOCR processing finished successfully for: be42a1ad-95d0-4d0c-93e7-548158310cc4[39m
+[2026-06-30 12:36:26:3626] [[35mhttp[39m]: [35mGET /api/ocr/be42a1ad-95d0-4d0c-93e7-548158310cc4[39m
+[2026-06-30 12:36:26:3626] [[32minfo[39m]: [32mFetching OCR document: be42a1ad-95d0-4d0c-93e7-548158310cc4[39m
+[2026-06-30 12:36:54:3654] [[35mhttp[39m]: [35mPOST /api/ocr/upload[39m
+[2026-06-30 12:36:54:3654] [[32minfo[39m]: [32mReceived file upload: Saraswati_Metal_Scrap_Invoice.pdf of type PURCHASE_BILL[39m
+[2026-06-30 12:36:54:3654] [[32minfo[39m]: [32mStarting asynchronous AI OCR process for document: 3a00493d-d0fa-4647-aab7-a5e9753288bd[39m
+[2026-06-30 12:36:55:3655] [[35mhttp[39m]: [35mGET /api/ocr/3a00493d-d0fa-4647-aab7-a5e9753288bd[39m
+[2026-06-30 12:36:55:3655] [[32minfo[39m]: [32mFetching OCR document: 3a00493d-d0fa-4647-aab7-a5e9753288bd[39m
+[2026-06-30 12:36:56:3656] [[35mhttp[39m]: [35mGET /api/ocr/3a00493d-d0fa-4647-aab7-a5e9753288bd[39m
+[2026-06-30 12:36:56:3656] [[32minfo[39m]: [32mFetching OCR document: 3a00493d-d0fa-4647-aab7-a5e9753288bd[39m
+[2026-06-30 12:36:57:3657] [[32minfo[39m]: [32mOCR processing finished successfully for: 3a00493d-d0fa-4647-aab7-a5e9753288bd[39m
+[2026-06-30 12:36:57:3657] [[35mhttp[39m]: [35mGET /api/ocr/3a00493d-d0fa-4647-aab7-a5e9753288bd[39m
+[2026-06-30 12:36:57:3657] [[32minfo[39m]: [32mFetching OCR document: 3a00493d-d0fa-4647-aab7-a5e9753288bd[39m
+[2026-06-30 13:56:40:5640] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 13:56:40:5640] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 13:56:40:5640] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 13:56:40:5640] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 13:57:05:575] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 13:57:05:575] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 13:57:05:575] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 13:57:05:575] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 13:57:05:575] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 13:57:05:575] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 13:59:07:597] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 13:59:07:597] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 14:11:30:1130] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 14:11:30:1130] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 14:11:30:1130] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 14:11:30:1130] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 14:11:30:1130] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 14:11:30:1130] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 14:11:35:1135] [[35mhttp[39m]: [35mPOST /api/ocr/upload[39m
+[2026-06-30 14:11:35:1135] [[32minfo[39m]: [32mReceived file upload: Saraswati_Metal_Scrap_Invoice.pdf of type PURCHASE_BILL[39m
+[2026-06-30 14:11:35:1135] [[32minfo[39m]: [32mStarting asynchronous AI OCR process for document: 9dbe1a98-99dd-4d7d-bcc4-db8de6442e32[39m
+[2026-06-30 14:11:36:1136] [[35mhttp[39m]: [35mGET /api/ocr/9dbe1a98-99dd-4d7d-bcc4-db8de6442e32[39m
+[2026-06-30 14:11:36:1136] [[32minfo[39m]: [32mFetching OCR document: 9dbe1a98-99dd-4d7d-bcc4-db8de6442e32[39m
+[2026-06-30 14:11:37:1137] [[35mhttp[39m]: [35mGET /api/ocr/9dbe1a98-99dd-4d7d-bcc4-db8de6442e32[39m
+[2026-06-30 14:11:37:1137] [[32minfo[39m]: [32mFetching OCR document: 9dbe1a98-99dd-4d7d-bcc4-db8de6442e32[39m
+[2026-06-30 14:11:38:1138] [[32minfo[39m]: [32mOCR processing finished successfully for: 9dbe1a98-99dd-4d7d-bcc4-db8de6442e32[39m
+[2026-06-30 14:11:38:1138] [[35mhttp[39m]: [35mGET /api/ocr/9dbe1a98-99dd-4d7d-bcc4-db8de6442e32[39m
+[2026-06-30 14:11:38:1138] [[32minfo[39m]: [32mFetching OCR document: 9dbe1a98-99dd-4d7d-bcc4-db8de6442e32[39m
+[2026-06-30 14:11:38:1138] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 14:11:38:1138] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 14:11:40:1140] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 14:11:40:1140] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 14:11:40:1140] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 14:11:40:1140] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 14:11:46:1146] [[35mhttp[39m]: [35mPOST /api/purchases[39m
+[2026-06-30 14:11:46:1146] [[32minfo[39m]: [32mCreating purchase entry requested by user: 5ba4e309-30c9-4f99-aea6-26d9762e5ba9[39m
+[2026-06-30 14:11:46:1146] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 14:11:46:1146] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 14:11:46:1146] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 14:11:46:1146] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 14:11:46:1146] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 14:11:46:1146] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 14:11:49:1149] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 14:11:49:1149] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 14:12:03:123] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 14:12:03:123] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 14:12:11:1211] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 14:12:11:1211] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 14:12:11:1211] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 14:12:11:1211] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 14:12:20:1220] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 14:12:20:1220] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 14:12:21:1221] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 14:12:21:1221] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 14:12:26:1226] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 14:12:26:1226] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 14:12:26:1226] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 14:12:26:1226] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 14:12:39:1239] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 14:12:39:1239] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 14:12:39:1239] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 14:12:39:1239] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 14:12:39:1239] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 14:12:39:1239] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 14:12:43:1243] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 14:12:43:1243] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 14:26:45:2645] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 14:26:45:2645] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 14:27:43:2743] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:27:43:2743] [[32minfo[39m]: [32mHTTP server closed.[39m
+[2026-06-30 14:27:43:2743] [[32minfo[39m]: [32mDatabase connection closed.[39m
+[2026-06-30 14:27:43:2743] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:27:43:2743] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 14:27:43:2743] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 14:27:43:2743] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 14:27:43:2743] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:27:43:2743] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:27:43:2743] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:28:04:284] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 14:28:04:284] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 14:28:05:285] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 14:28:05:285] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 14:28:05:285] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 14:28:05:285] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 14:28:05:285] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 14:28:05:285] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 14:28:05:285] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 14:28:05:285] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 14:28:05:285] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 14:28:05:285] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 14:40:06:406] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:40:06:406] [[32minfo[39m]: [32mHTTP server closed.[39m
+[2026-06-30 14:40:06:406] [[32minfo[39m]: [32mDatabase connection closed.[39m
+[2026-06-30 14:40:06:406] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:40:06:406] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 14:40:06:406] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 14:40:06:406] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 14:40:06:406] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:40:06:406] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:40:06:406] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:40:32:4032] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:40:33:4033] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:40:33:4033] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 14:40:33:4033] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 14:40:33:4033] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 14:40:33:4033] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:40:33:4033] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:40:33:4033] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:32:4932] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:32:4932] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:49:32:4932] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 14:49:32:4932] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 14:49:32:4932] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 14:49:32:4932] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:49:32:4932] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:32:4932] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:37:4937] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:38:4938] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:49:38:4938] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 14:49:38:4938] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 14:49:38:4938] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 14:49:38:4938] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:49:38:4938] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:38:4938] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:46:4946] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:46:4946] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:49:46:4946] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 14:49:46:4946] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 14:49:46:4946] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 14:49:46:4946] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:49:46:4946] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:46:4946] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:58:4958] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:59:4959] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:49:59:4959] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 14:49:59:4959] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 14:49:59:4959] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 14:49:59:4959] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 14:49:59:4959] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 14:49:59:4959] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:07:04:74] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:07:04:74] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:07:05:75] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:07:05:75] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:07:06:76] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 15:07:06:76] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 15:07:06:76] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:07:06:76] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:07:06:76] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:07:06:76] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:07:07:77] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:07:07:77] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:08:12:812] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:08:12:812] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:08:12:812] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:08:12:812] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:09:47:947] [[35mhttp[39m]: [35mPOST /api/business-profile[39m
+[2026-06-30 15:09:47:947] [[32minfo[39m]: [32mUpdating business profile setting: Shashvat Enterpruse[39m
+[2026-06-30 15:09:50:950] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:09:50:950] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:09:51:951] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:09:51:951] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:09:53:953] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 15:09:53:953] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 15:09:53:953] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:09:53:953] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:09:53:953] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:09:53:953] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:09:53:953] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:09:53:953] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:09:55:955] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:09:55:955] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:09:55:955] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:09:55:955] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:09:55:955] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:09:55:955] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:09:55:955] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:09:55:955] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:09:55:955] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:09:55:955] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:10:13:1013] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:10:13:1013] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:10:13:1013] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:10:13:1013] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:10:13:1013] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:10:13:1013] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:10:13:1013] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:10:13:1013] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:10:13:1013] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:10:13:1013] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:10:32:1032] [[35mhttp[39m]: [35mPOST /api/invoices[39m
+[2026-06-30 15:10:32:1032] [[32minfo[39m]: [32mCreating invoice requested by user: 5ba4e309-30c9-4f99-aea6-26d9762e5ba9[39m
+[2026-06-30 15:10:32:1032] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:10:32:1032] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:10:32:1032] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:10:32:1032] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:10:32:1032] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:10:32:1032] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:10:32:1032] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:10:32:1032] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:10:32:1032] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:10:32:1032] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:11:56:1156] [[35mhttp[39m]: [35mPOST /api/reminders[39m
+[2026-06-30 15:11:56:1156] [[32minfo[39m]: [32mCreating payment reminder for invoice: 0eb52c31-3bfa-4e28-8aa9-b2577c4ac3ea[39m
+[2026-06-30 15:11:56:1156] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:11:56:1156] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:11:56:1156] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:11:56:1156] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:11:56:1156] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:11:56:1156] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:11:56:1156] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:11:56:1156] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:11:56:1156] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:11:56:1156] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:12:22:1222] [[35mhttp[39m]: [35mPOST /api/reminders[39m
+[2026-06-30 15:12:22:1222] [[32minfo[39m]: [32mCreating payment reminder for invoice: 0eb52c31-3bfa-4e28-8aa9-b2577c4ac3ea[39m
+[2026-06-30 15:12:22:1222] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:12:22:1222] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:12:22:1222] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:12:22:1222] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:12:22:1222] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:12:22:1222] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:12:22:1222] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:12:22:1222] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:12:22:1222] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:12:22:1222] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:12:26:1226] [[35mhttp[39m]: [35mPOST /api/reminders/0540f8a9-ca14-4f22-bf2f-0a385716a806/trigger[39m
+[2026-06-30 15:12:26:1226] [[32minfo[39m]: [32mManual reminder dispatch requested for ID: 0540f8a9-ca14-4f22-bf2f-0a385716a806[39m
+[2026-06-30 15:12:26:1226] [[32minfo[39m]: [32mTriggering notification dispatch for payment reminder: 0540f8a9-ca14-4f22-bf2f-0a385716a806[39m
+[2026-06-30 15:12:26:1226] [[32minfo[39m]: [32mSending actual email to nitsanghani1@gmail.com with PDF attachment[39m
+[2026-06-30 15:12:30:1230] [[32minfo[39m]: [32mEmail sent successfully to nitsanghani1@gmail.com[39m
+[2026-06-30 15:12:30:1230] [[32minfo[39m]: [32mPayment reminder: 0540f8a9-ca14-4f22-bf2f-0a385716a806 updated. Next follow-up scheduled on: 2026-06-04[39m
+[2026-06-30 15:12:30:1230] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:12:30:1230] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:12:30:1230] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:12:30:1230] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:12:30:1230] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:12:30:1230] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:12:30:1230] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:12:30:1230] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:12:30:1230] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:12:30:1230] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:13:34:1334] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:13:34:1334] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:13:34:1334] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:13:34:1334] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:18:59:1859] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:18:59:1859] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:19:03:193] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:19:03:193] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:19:04:194] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 15:19:04:194] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 15:19:04:194] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:19:04:194] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:19:04:194] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:04:194] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:19:11:1911] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:11:1911] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:19:12:1912] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:19:12:1912] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:19:12:1912] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:19:12:1912] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:19:12:1912] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:12:1912] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:19:12:1912] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:19:12:1912] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:19:12:1912] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:19:12:1912] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:19:32:1932] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:19:32:1932] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:19:33:1933] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:19:33:1933] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:19:33:1933] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:19:33:1933] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:19:34:1934] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:19:34:1934] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:19:34:1934] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:19:34:1934] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:19:34:1934] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:34:1934] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:19:34:1934] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:19:34:1934] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:19:34:1934] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:19:34:1934] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:19:35:1935] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 15:19:35:1935] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 15:19:35:1935] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:19:35:1935] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:19:35:1935] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:35:1935] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:19:36:1936] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:19:36:1936] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:19:37:1937] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:19:37:1937] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:19:37:1937] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:19:37:1937] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:19:40:1940] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:40:1940] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:19:41:1941] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:19:41:1941] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:19:41:1941] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:19:41:1941] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:19:41:1941] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:41:1941] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:19:41:1941] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:19:41:1941] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:19:41:1941] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:19:41:1941] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:19:42:1942] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:19:42:1942] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:19:44:1944] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:19:44:1944] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:19:44:1944] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:19:44:1944] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:19:45:1945] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:45:1945] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:19:46:1946] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 15:19:46:1946] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 15:19:46:1946] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:19:46:1946] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:19:46:1946] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:46:1946] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:19:46:1946] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:19:46:1946] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:19:47:1947] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:19:47:1947] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:19:48:1948] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:19:48:1948] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:19:48:1948] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:19:48:1948] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:19:49:1949] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 15:19:49:1949] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 15:19:49:1949] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:19:49:1949] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:19:49:1949] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:49:1949] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:19:50:1950] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:19:50:1950] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:19:50:1950] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:19:50:1950] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:19:52:1952] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:19:52:1952] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:19:52:1952] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:19:52:1952] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:19:55:1955] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:19:55:1955] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:19:56:1956] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:19:56:1956] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:19:58:1958] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 15:19:58:1958] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 15:19:58:1958] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:19:58:1958] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:19:58:1958] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:19:58:1958] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:20:00:200] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:20:00:200] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:20:01:201] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:20:01:201] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:20:01:201] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:20:01:201] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:20:01:201] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:20:01:201] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:20:01:201] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:20:01:201] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:20:01:201] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:20:01:201] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:21:41:2141] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:21:41:2141] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:21:42:2142] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:21:42:2142] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:21:43:2143] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 15:21:43:2143] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 15:21:43:2143] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:21:43:2143] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:21:43:2143] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:21:43:2143] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:21:45:2145] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:21:45:2145] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:21:47:2147] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:21:47:2147] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:21:48:2148] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:21:48:2148] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:21:50:2150] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:21:50:2150] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:21:50:2150] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:21:50:2150] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:22:08:228] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:22:08:228] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:26:39:2639] [[35mhttp[39m]: [35mPOST /api/auth/logout[39m
+[2026-06-30 15:26:39:2639] [[32minfo[39m]: [32mLogout requested[39m
+[2026-06-30 15:28:34:2834] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:28:34:2834] [[32minfo[39m]: [32mHTTP server closed.[39m
+[2026-06-30 15:28:34:2834] [[32minfo[39m]: [32mDatabase connection closed.[39m
+[2026-06-30 15:28:34:2834] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:28:34:2834] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 15:28:34:2834] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 15:28:34:2834] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 15:28:34:2834] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:28:34:2834] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:28:34:2834] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:28:48:2848] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:28:48:2848] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:28:48:2848] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 15:28:48:2848] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 15:28:48:2848] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 15:28:48:2848] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:28:48:2848] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:28:48:2848] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:29:39:2939] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:29:40:2940] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:29:40:2940] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 15:29:40:2940] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 15:29:40:2940] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 15:29:40:2940] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:29:40:2940] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:29:40:2940] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:35:29:3529] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:35:30:3530] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:35:30:3530] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 15:35:30:3530] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 15:35:30:3530] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 15:35:30:3530] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:35:30:3530] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:35:30:3530] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:35:39:3539] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:35:40:3540] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:35:40:3540] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 15:35:40:3540] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 15:35:40:3540] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 15:35:40:3540] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:35:40:3540] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:35:58:3558] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:35:58:3558] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:35:58:3558] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 15:35:58:3558] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 15:35:58:3558] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 15:35:58:3558] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:35:58:3558] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:35:59:3559] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:37:19:3719] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:37:20:3720] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:37:20:3720] [[32minfo[39m]: [32m  Server running on port 5000[39m
+[2026-06-30 15:37:20:3720] [[32minfo[39m]: [32m  Environment: development[39m
+[2026-06-30 15:37:20:3720] [[32minfo[39m]: [32m  Health check: http://localhost:5000/api/health[39m
+[2026-06-30 15:37:20:3720] [[32minfo[39m]: [32m=================================[39m
+[2026-06-30 15:37:20:3720] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:37:20:3720] [[32minfo[39m]: [32mReceived shutdown signal. Closing server...[39m
+[2026-06-30 15:38:35:3835] [[35mhttp[39m]: [35mPOST /api/auth/login[39m
+[2026-06-30 15:38:35:3835] [[32minfo[39m]: [32mLogin attempt for email: admin@brassflow.in[39m
+[2026-06-30 15:38:35:3835] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:38:35:3835] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:38:39:3839] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:38:39:3839] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:38:39:3839] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:38:39:3839] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:38:52:3852] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:38:52:3852] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:38:52:3852] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:38:52:3852] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:38:56:3856] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 15:38:56:3856] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 15:38:56:3856] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:38:56:3856] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:38:56:3856] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:38:56:3856] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:39:00:390] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:39:00:390] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:39:00:390] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:39:00:390] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:39:03:393] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:39:03:393] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:39:09:399] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:39:09:399] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:39:09:399] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:39:09:399] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:39:14:3914] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:39:14:3914] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:39:15:3915] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:39:15:3915] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:39:15:3915] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:39:15:3915] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:39:15:3915] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:39:15:3915] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:39:15:3915] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:39:15:3915] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:39:24:3924] [[35mhttp[39m]: [35mPOST /api/reminders/520f12bc-fddc-456d-aaed-82b5f985d622/trigger[39m
+[2026-06-30 15:39:24:3924] [[32minfo[39m]: [32mManual reminder dispatch requested for ID: 520f12bc-fddc-456d-aaed-82b5f985d622[39m
+[2026-06-30 15:39:24:3924] [[32minfo[39m]: [32mTriggering notification dispatch for payment reminder: 520f12bc-fddc-456d-aaed-82b5f985d622[39m
+[2026-06-30 15:39:24:3924] [[32minfo[39m]: [32m[MOCK DISPATCH] Sending WHATSAPP to 9016988300:[39m
+[32m"*BRASSFLOW INDUSTRIES BILLING REMINDER*[39m
+
+[32mDear Accounts Team at *aksar Enterprise*,[39m
+
+[32mThis is a friendly reminder that invoice *INV-2026-00002* of *₹1,07,404.00* is due on *2026-07-30*.[39m
+
+[32mPlease process the payment at your earliest convenience.[39m
+
+[32mDownload Invoice PDF: http://localhost:5000/uploads/invoices/INV-2026-00002.pdf[39m
+
+[32mBank: HDFC Bank | A/C: 50200012345678 | IFSC: HDFC0000123[39m
+
+[32mThank you."[39m
+[2026-06-30 15:39:25:3925] [[32minfo[39m]: [32mPayment reminder: 520f12bc-fddc-456d-aaed-82b5f985d622 updated. Next follow-up scheduled on: 2026-06-02[39m
+[2026-06-30 15:39:25:3925] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:39:25:3925] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:39:25:3925] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:39:25:3925] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:39:25:3925] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:39:25:3925] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:39:25:3925] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:39:25:3925] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:39:25:3925] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:39:25:3925] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:39:46:3946] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:39:46:3946] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:39:46:3946] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:39:46:3946] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:41:25:4125] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:41:25:4125] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:41:25:4125] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:41:25:4125] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:41:26:4126] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:41:26:4126] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:41:26:4126] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:41:26:4126] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:41:32:4132] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:41:32:4132] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:41:33:4133] [[35mhttp[39m]: [35mGET /api/purchases[39m
+[2026-06-30 15:41:33:4133] [[32minfo[39m]: [32mFetching all purchases[39m
+[2026-06-30 15:41:33:4133] [[35mhttp[39m]: [35mGET /api/suppliers[39m
+[2026-06-30 15:41:33:4133] [[32minfo[39m]: [32mFetching all suppliers[39m
+[2026-06-30 15:41:33:4133] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:41:33:4133] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:41:34:4134] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:41:34:4134] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:41:35:4135] [[35mhttp[39m]: [35mGET /api/invoices[39m
+[2026-06-30 15:41:35:4135] [[32minfo[39m]: [32mFetching all invoices[39m
+[2026-06-30 15:41:35:4135] [[35mhttp[39m]: [35mGET /api/customers[39m
+[2026-06-30 15:41:35:4135] [[32minfo[39m]: [32mFetching all customers[39m
+[2026-06-30 15:41:35:4135] [[35mhttp[39m]: [35mGET /api/products[39m
+[2026-06-30 15:41:35:4135] [[32minfo[39m]: [32mFetching all products[39m
+[2026-06-30 15:41:35:4135] [[35mhttp[39m]: [35mGET /api/reminders[39m
+[2026-06-30 15:41:35:4135] [[32minfo[39m]: [32mFetching all payment reminders[39m
+[2026-06-30 15:41:35:4135] [[35mhttp[39m]: [35mGET /api/reminders/logs[39m
+[2026-06-30 15:41:35:4135] [[32minfo[39m]: [32mFetching payment reminder execution audit trail[39m
+[2026-06-30 15:41:36:4136] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:41:36:4136] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:41:37:4137] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:41:37:4137] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:41:37:4137] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:41:37:4137] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:41:37:4137] [[35mhttp[39m]: [35mGET /api/analytics/dashboard[39m
+[2026-06-30 15:41:37:4137] [[32minfo[39m]: [32mAggregating dashboard KPIs and report analytics[39m
+[2026-06-30 15:41:47:4147] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:41:47:4147] [[32minfo[39m]: [32mFetching business profile settings[39m
+[2026-06-30 15:41:47:4147] [[35mhttp[39m]: [35mGET /api/business-profile[39m
+[2026-06-30 15:41:47:4147] [[32minfo[39m]: [32mFetching business profile settings[39m

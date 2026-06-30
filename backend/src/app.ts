@@ -10,6 +10,7 @@ import ocrRoutes from './routes/ocr.routes';
 import reminderRoutes from './routes/reminder.routes';
 import analyticsRoutes from './routes/analytics.routes';
 import purchaseRoutes from './routes/purchase.routes';
+import businessProfileRoutes from './routes/business-profile.routes';
 import { logger } from './utils/logger';
 
 const app = express();
@@ -38,6 +39,7 @@ app.use('/api/ocr', ocrRoutes);
 app.use('/api/reminders', reminderRoutes);
 app.use('/api/analytics', analyticsRoutes);
 app.use('/api/purchases', purchaseRoutes);
+app.use('/api/business-profile', businessProfileRoutes);
 
 // 4. Base API test route
 app.get('/api/health', (req: Request, res: Response) => {

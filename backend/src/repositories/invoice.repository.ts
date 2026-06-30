@@ -240,6 +240,7 @@ export class InvoiceRepository {
           unit: i.productUnit,
           unitPrice: i.unitPrice,
           discountAmount: i.discountAmount,
+          discountPercentage: i.discountPercentage,
           taxableAmount: i.taxableAmount,
           gstRate: i.gstRate,
           cgst: i.cgst,

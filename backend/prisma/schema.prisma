@@ -469,3 +469,20 @@ model PurchaseItem {
   @@index([purchaseId])
   @@index([productId])
 }
+
+model BusinessProfile {
+  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  companyName String
+  address     String   @db.Text
+  gstin       String?
+  pan         String?
+  email       String?
+  phone       String?
+  logoUrl     String?
+  smtpEmail    String?
+  smtpPassword String?
+  smtpHost     String?
+  smtpPort     Int?
+  createdAt   DateTime @default(now()) @db.Timestamptz
+  updatedAt   DateTime @updatedAt @db.Timestamptz
+}
